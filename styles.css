@@ -1,28 +1,193 @@
-/* Estilo para o corpo da página */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200");
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #040613; 
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+    background: #101829 ;
+    overflow: hidden;
+    padding-top: 10px;
+    transition: 0.6s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar:hover{
+    width: 250px;
+    transition: 0.6s ease;
+}
+
+.sidebar ul{
+    position: relative;
+    height: 97vh;
+}
+
+.sidebar ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+.sidebar ul li :hover{
+    background:rgba(16, 153, 177, 0.5);
+    transition: 0.3s ease;
+}
+
+.sidebar ul li a{
+    position: relative;
     display: flex;
-    flex-direction: column;
+    white-space: nowrap;
+    text-decoration: none;
+    color:#ffffff;
+}s
+
+.sidebar ul li .logo{
+    margin-bottom: 80px;
+}
+
+.sidebar ul li .logo .text{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sidebar ul li last-child{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    min-height: 75px;
+    height: 60px;
+    font-size: 22px;
 }
 
-/* Estilo para o título */
-h1 {
-    color: #333;
+.sidebar ul li a .text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 500;
 }
 
-/* Estilo para o botão */
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+/*cards*/
+
+ .card {
+    display: flex; /* 🔥 deixa lado a lado */
+    justify-content: center; /* começo (esquerda) */
+    flex-direction: row; /* padrão: imagem esquerda, texto direita */
+    width: 500px;
+    background-color: #1e2939;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-color: #ffffff;
+    }
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+
+ }
+
+.container-card {
+  display: flex;
+  gap: 20px;     
 }
 
-button:hover {
-    background-color: #0056b3;
+.card:hover {
+    transform: scale(1.05);
 }
+
+.card img {
+    width: 40%;
+    height: 20px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 20px;
+    color: #ffffff;
+}
+     
+
+.card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff7a00;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.card-button:hover {
+    background-color: #e66a00;
+}
+
+
+/*
+.container {
+    display: flex; 
+    height: 100vh;
+}
+
+.sidebar_wrapper {
+    --list-gap: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    gap: var(--list-gap);
+}
+
+.sidebar_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 0.125rem;
+    overflow: hidden;
+
+}
+
+.sidebar_item {
+    block-size: var(--item);
+    border-radius: var(--brad-inner);
+}
+
+.item-heading {
+    display: flex;
+    align-items: left;
+}
+/*
