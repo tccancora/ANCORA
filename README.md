@@ -66,7 +66,7 @@ Relatórios e estatísticas
 
 Protótipo
 
-Base44: 
+Base44: https://ancora-gestao-institucional-copy-263f754a.base44.app
 
 Toda a documentação do projeto pode ser encontrada na Wiki do repositório.
 
