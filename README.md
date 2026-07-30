@@ -70,7 +70,7 @@ Base44:
 
 Toda a documentação do projeto pode ser encontrada na Wiki do repositório.
 
-Wiki: https://github.com/tccancora/ANCORA
+Wiki: https://github.com/tccancora/ANCORA/wiki
 
 Objetivo:
 
