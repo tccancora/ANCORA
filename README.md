@@ -1,77 +1,116 @@
-ÂNCORA, Sistema Inteligente de Gestão Acadêmica
+# ÂNCORA
 
-Integrantes:
+> Sistema Inteligente de Gestão Acadêmica
 
-Lorena da Silva Cani
-Marco Antônio Bruzasco Gonçalves
-Maria Eduarda Ferreira Almeida
-Samuel Santana Torriani
-Theo Eric Eggert
+---
 
-Curso: Desenvolvimento de Sistemas
+# Integrantes
 
-Turma: MTEC 3°DS PI
+* Lorena da Silva Cani
+* Marco Antônio Bruzasco Gonçalves
+* Maria Eduarda Ferreira Almeida
+* Samuel Santana Torriani
+* Theo Eric Eggert
 
-Professor Orientador: Gilson 
+---
 
-Sobre o Projeto
+# Curso e Turma
 
-O ÂNCORA é uma plataforma web desenvolvida para centralizar e simplificar a gestão acadêmica de instituições de ensino. O sistema reúne em um único ambiente funcionalidades voltadas para administradores, professores e alunos, oferecendo recursos como gerenciamento de usuários, reservas de espaços, organização de tarefas, comunicação entre os envolvidos e acompanhamento das atividades acadêmicas.
+**Curso:** Desenvolvimento de Sistemas
 
-O projeto busca resolver problemas comuns encontrados em instituições de ensino, como a utilização de múltiplos sistemas independentes, dificuldades na comunicação entre setores, falta de organização das informações e processos administrativos pouco eficientes. Dessa forma, o ÂNCORA proporciona uma solução integrada, moderna e intuitiva para melhorar a experiência de todos os usuários.
+**Turma:** MTEC 3°DS PI
 
-Tecnologias Utilizadas:
+---
 
-Front-end:
+# Professor Orientador
 
-React; TypeScript; Tailwind CSS; Vite
+**Professor:** Gilson
 
-Back-end:
+---
 
-Laravel, PHP
+# Sobre o Projeto
 
-Banco de Dados:
+O **ÂNCORA** é uma plataforma web desenvolvida para centralizar e simplificar a gestão acadêmica de instituições de ensino. O sistema reúne, em um único ambiente, funcionalidades voltadas para administradores, professores e alunos, oferecendo recursos como gerenciamento de usuários, reservas de espaços, organização de tarefas, comunicação entre os envolvidos e acompanhamento das atividades acadêmicas.
 
-MySQL
+O projeto busca resolver problemas comuns encontrados em instituições de ensino, como a utilização de múltiplos sistemas independentes, dificuldades na comunicação entre setores, falta de organização das informações e processos administrativos pouco eficientes. Dessa forma, o **ÂNCORA** proporciona uma solução integrada, moderna e intuitiva para melhorar a experiência de todos os usuários.
 
-Ferramentas:
+---
 
-Git; GitHub; Figma; Composer; Visual Studio Code
+# Tecnologias Utilizadas
 
-Status do Desenvolvimento: Fase de desenvolvimento Avançado
+### Front-end
 
-Funcionalidades concluídas
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
 
-Protótipo de alta fidelidade
-Planejamento das funcionalidades
-Estrutura inicial do projeto
-Configuração do ambiente Laravel
-Versionamento com Git e GitHub
+### Back-end
 
-Em desenvolvimento
+* Laravel
+* PHP
 
-Sistema de autenticação
-Cadastro de usuários
-Painel administrativo
-Integração entre front-end e back-end
-Banco de dados
+### Banco de Dados
 
-Planejado
+* MySQL
 
-Sistema de reservas
-Gerenciamento de tarefas
-Notificações
-Agente de Inteligência Artificial
-Relatórios e estatísticas
+### Ferramentas
 
-Protótipo
+* Git
+* GitHub
+* Figma
+* Composer
+* Visual Studio Code
 
-Base44: https://ancora-gestao-institucional-copy-263f754a.base44.app
+---
+
+# Status do Desenvolvimento
+
+**Fase de Desenvolvimento Avançado**
+
+### Funcionalidades Concluídas
+
+* Protótipo de alta fidelidade
+* Planejamento das funcionalidades
+* Estrutura inicial do projeto
+* Configuração do ambiente Laravel
+* Versionamento com Git e GitHub
+
+### Em Desenvolvimento
+
+* Sistema de autenticação
+* Cadastro de usuários
+* Painel administrativo
+* Integração entre front-end e back-end
+* Banco de dados
+
+### Planejado
+
+* Sistema de reservas
+* Gerenciamento de tarefas
+* Notificações
+* Agente de Inteligência Artificial
+* Relatórios e estatísticas
+
+---
+
+# Protótipo
+
+**Base44:**
+https://ancora-gestao-institucional-copy-263f754a.base44.app
+
+---
+
+# Wiki do Projeto
 
 Toda a documentação do projeto pode ser encontrada na Wiki do repositório.
 
-Wiki: https://github.com/tccancora/ANCORA/wiki
+**Wiki:**
+https://github.com/tccancora/ANCORA/wiki
 
-Objetivo:
+---
+
+# Objetivo
 
 Desenvolver uma plataforma integrada que modernize a gestão acadêmica, reduza processos manuais, centralize informações e facilite a comunicação entre administradores, professores e alunos por meio de uma interface simples, eficiente e intuitiva.
+
