@@ -1,6 +1,6 @@
 # ÂNCORA
 
-> Sistema Inteligente de Gestão Acadêmica
+> Ambiente de Navegação, Controle e Organização de Recursos Acadêmicos
 
 ---
 
@@ -40,10 +40,9 @@ O projeto busca resolver problemas comuns encontrados em instituições de ensin
 
 ### Front-end
 
-* React
-* TypeScript
-* Tailwind CSS
-* Vite
+* JavaScript
+* HTML
+* CSS
 
 ### Back-end
 
@@ -56,11 +55,10 @@ O projeto busca resolver problemas comuns encontrados em instituições de ensin
 
 ### Ferramentas
 
-* Git
-* GitHub
-* Figma
-* Composer
 * Visual Studio Code
+* HeidiSQL
+* Base44
+* GitHub
 
 ---
 
@@ -74,7 +72,6 @@ O projeto busca resolver problemas comuns encontrados em instituições de ensin
 * Planejamento das funcionalidades
 * Estrutura inicial do projeto
 * Configuração do ambiente Laravel
-* Versionamento com Git e GitHub
 
 ### Em Desenvolvimento
 
