@@ -24,7 +24,7 @@
 
 # Professor Orientador
 
-**Professor:** Gilson
+**Professor:** Sem Professor
 
 ---
 
