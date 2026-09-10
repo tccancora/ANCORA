@@ -1,3 +1,0 @@
-# Bloqueia qualquer acesso via web à pasta storage
-Order allow,deny
-Deny from all
