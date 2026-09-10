@@ -56,7 +56,7 @@ class AdminController {
         $userInitials = $firstChar . $secondChar;
 
         // Métricas de tarefas reais do banco
-        $tarefasContadores = Tarefa::obterContadoresDashboard((int)$usuarioLogado['id'], 1, (int)$usuarioLogado['instituicao_id']);
+        $tarefasContadores = Tarefa::obterContadoresDashboard((int)$usuarioLogado['nome'], 1, (int)$usuarioLogado['instituicao_id']);
         $tarefasPendentes = $tarefasContadores['entregas_pendentes_correcao'] ?? $tarefasContadores['tarefas_ativas'];
 
         $pageTitle = "Dashboard Administrador — ÂNCORA";
