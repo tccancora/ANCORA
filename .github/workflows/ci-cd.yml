@@ -29,10 +29,10 @@ jobs:
           coverage: none
 
       - name: Validar Sintaxe de Todos os Arquivos PHP (PHP Lint)
-        run: php tests/validate_syntax.php
+        run: php ancora/tests/validate_syntax.php
 
       - name: Executar Suíte de Testes Automatizados do ÂNCORA
-        run: php tests/run_all_tests.php
+        run: php ancora/tests/run_all_tests.php
 
   # ============================================================================
   # ETAPA DE IMPLANTAÇÃO E ENTREGA CONTÍNUA (CD)
