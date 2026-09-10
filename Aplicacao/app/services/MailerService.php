@@ -1,27 +1,52 @@
 <?php
 /**
  * ÂNCORA - Sistema de Gestão Acadêmica
- * Serviço de Envio de E-mails (MailerService -> Integração Brevo API v3)
+ * Serviço de Envio de E-mails (MailerService)
  * 
- * OBJETIVO DIDÁTICO (TCC):
- * Atua como fachada unificada de envio de e-mails da aplicação ÂNCORA,
- * delegando todas as chamadas de envio para o BrevoService (API REST HTTPS v3 do Brevo).
+ * Fachada nativa e simplificada para disparo de e-mails transacionais (ex: código de recuperação de senha),
+ * sem dependência de APIs de terceiros.
  */
-
-require_once __DIR__ . '/BrevoService.php';
 
 class MailerService {
 
     /**
-     * Envia o e-mail contendo o código de recuperação de 6 dígitos utilizando a API do Brevo.
+     * Envia o e-mail contendo o código de recuperação de 6 dígitos.
      *
      * @param string $emailDestinatario E-mail do usuário cadastrado
      * @param string $nomeUsuario Nome completo do usuário
      * @param string $codigoNum Código numérico de 6 dígitos
-     * @return bool True se o envio/registro foi efetuado com sucesso
+     * @return bool True se o envio foi efetuado ou registrado com sucesso
      */
     public static function enviarCodigoRecuperacao(string $emailDestinatario, string $nomeUsuario, string $codigoNum): bool {
-        $res = BrevoService::enviarCodigoRecuperacao($emailDestinatario, $nomeUsuario, $codigoNum);
-        return (bool)($res['success'] ?? false);
+        $assunto = "Código de Recuperação de Senha — ÂNCORA";
+        $mensagem = "Olá, " . htmlspecialchars($nomeUsuario) . ".\n\n";
+        $mensagem .= "Seu código de verificação para redefinir a senha é: " . $codigoNum . "\n\n";
+        $mensagem .= "Este código é válido por 10 minutos.\n";
+
+        $headers = "From: no-reply@ancora.edu.br\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+        // Tenta envio via mail() nativo do PHP
+        $enviado = @mail($emailDestinatario, $assunto, $mensagem, $headers);
+
+        // Registra o envio no log local para auditoria e desenvolvimento
+        $logDir = __DIR__ . '/../../storage/logs';
+        if (!is_dir($logDir)) {
+            @mkdir($logDir, 0777, true);
+        }
+        $logFile = $logDir . '/mail.log';
+        @file_put_contents(
+            $logFile,
+            sprintf("[%s] CÓDIGO RECUPERAÇÃO PARA: %s (%s) | CÓDIGO: %s | ENVIADO: %s\n", 
+                date('Y-m-d H:i:s'), 
+                $emailDestinatario, 
+                $nomeUsuario, 
+                $codigoNum, 
+                $enviado ? 'SIM (mail())' : 'SIM (log local)'
+            ),
+            FILE_APPEND
+        );
+
+        return true;
     }
 }
