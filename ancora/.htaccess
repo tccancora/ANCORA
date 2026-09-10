@@ -1,0 +1,24 @@
+# ==============================================================================
+# ÂNCORA - PROTEÇÃO DE SEGURANÇA NO APACHE (.HTACCESS)
+# ==============================================================================
+
+# 1. Bloqueia acesso direto a arquivos ocultos e de configuração (.env, .gitignore, .git, etc.)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 2. Bloqueia especificamente qualquer tentativa de baixar o arquivo .env
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# 3. Bloqueia acesso direto a arquivos de log, banco de dados e arquivos SQL
+<FilesMatch "\.(log|sql|json|example|md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 4. Impede a listagem de diretórios (Directory Browsing)
+Options -Indexes

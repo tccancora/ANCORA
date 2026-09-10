@@ -1,0 +1,22 @@
+# ==============================================================================
+# ÂNCORA - ARQUIVOS E DIRETÓRIOS IGNORADOS PELO GIT (.GITIGNORE)
+# ==============================================================================
+
+# Variáveis de ambiente sensíveis (senhas e credenciais locais)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs e arquivos de auditoria locais
+storage/logs/*.log
+scratch/
+
+# Dependências do Composer / Node (se houver)
+vendor/
+node_modules/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
