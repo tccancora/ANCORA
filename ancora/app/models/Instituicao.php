@@ -55,13 +55,13 @@ class Instituicao {
      * @return string Código institucional
      */
 
-    /*public static function formatarCodigo(int $id): string {
-        return 'ANC-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);
-    }*/
-
-    // ALTERAÇÃO PARA TESTE:
     public static function formatarCodigo(int $id): string {
-    return 'TESTE-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);
+        return 'ANC-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);
+    }
+
+    /*// ALTERAÇÃO PARA TESTE:
+    public static function formatarCodigo(int $id): string {
+    return 'TESTE-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);*/
 
 }
 }
