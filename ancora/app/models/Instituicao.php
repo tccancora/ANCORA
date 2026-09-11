@@ -61,8 +61,7 @@ class Instituicao {
 
     /*// ALTERAÇÃO PARA TESTE:
     public static function formatarCodigo(int $id): string {
-    return 'TESTE-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);*/
-
-}
+    return 'TESTE-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);
+    }*/
 }
 
