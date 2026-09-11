@@ -83,7 +83,7 @@ class TarefasController {
         $perfilSlug    = mb_strtolower(trim($user['perfil_nome'] ?? ''));
         $userSector    = ($perfilId === 1) ? 'Diretoria' : (($perfilId === 2) ? 'Corpo Docente' : 'Corpo Discente');
 
-        /*if ($perfilSlug === 'aluno') {
+        if ($perfilSlug === 'aluno') {
             $inicioUrl = url('aluno');
         } elseif ($perfilSlug === 'professor') {
             $inicioUrl = url('professor');
@@ -91,7 +91,7 @@ class TarefasController {
             $inicioUrl = url('funcionario');
         } else {
             $inicioUrl = url('admin');
-        }*/
+        }
 
         $partes = explode(' ', trim($userName));
         $firstChar = !empty($partes[0]) ? mb_strtoupper(mb_substr($partes[0], 0, 1)) : 'U';

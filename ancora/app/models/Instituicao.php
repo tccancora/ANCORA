@@ -54,8 +54,15 @@ class Instituicao {
      * @param int $id ID da instituição
      * @return string Código institucional
      */
-    public static function formatarCodigo(int $id): string {
+
+    /*public static function formatarCodigo(int $id): string {
         return 'ANC-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);
-    }
+    }*/
+
+    // ALTERAÇÃO PARA TESTE:
+    public static function formatarCodigo(int $id): string {
+    return 'TESTE-' . str_pad((string)$id, 4, '0', STR_PAD_LEFT);
+
+}
 }
 
