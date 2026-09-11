@@ -29,7 +29,7 @@ class CadastroController {
             $confirmarSenha  = $_POST['confirmar_senha'] ?? '';
 
             // 1. Validação no servidor: Campos obrigatórios
-            if (empty($nomeInstituicao) || empty($nomeResponsavel) || empty($email) || empty($senha) || empty($confirmarSenha)) {
+            if (empty($nomeInstituicao) || empty($nomeResponsavel) || empty($email) || empty($nome) || empty($confirmarSenha)) {
                 $errorMsg = "Por favor, preencha todos os campos obrigatórios.";
             }
             // 2. Validação do formato do e-mail
