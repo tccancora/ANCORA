@@ -57,6 +57,7 @@ O **ÂNCORA** é uma plataforma web desenvolvida para centralizar e simplificar 
 - HeidiSQL
 - Base44
 - GitHub
+- InfinityFree
 
 ---
 
