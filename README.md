@@ -1,4 +1,4 @@
-# ÂNCORA
+# ÂNCORA ⚓
 
 > Ambiente de Navegação, Controle e Organização de Recursos Acadêmicos
 
